@@ -1,3 +1,50 @@
 body {
-  background: blanchedalmond;
+  background: #EDEDED;
+  margin: auto;
+}
+
+* {
+  border: 1px solid black;
+}
+
+.container{
+  text-align: center;
+  background-color: #D8D8D8;
+
+}
+
+.a{
+  padding: 10px;
+}
+
+.b{
+  padding: 100px;
+  width: 200%;
+}
+
+.c{
+  height: 100%; 
+  padding: 100px;
+  width: 0%;
+}
+
+.secondRow{
+  display:flex;
+  background-color: #D8D8D8;
+
+}
+
+@media (max-width: 600px) {
+  .secondRow{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container > .a {
+  width: 100%;
+}
+
+.secondRow > .c {
+  width: 100%;
+}
 }
